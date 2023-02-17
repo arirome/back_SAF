@@ -25,6 +25,12 @@ const InventarioSchema = Schema(
       type: String,
       default: "UN",
     },
+
+    cantidadProducto: {
+      type: Number,
+      default: 0,
+
+    },
     precio: {
       type: Number,
       default: 0,
@@ -43,7 +49,7 @@ const InventarioSchema = Schema(
           ref: "Punto",
           required: true,
         },
-        cantidad: {
+        cantidadDestino: {
           type: Number,
           required: true,
         },
